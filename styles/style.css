@@ -30,17 +30,29 @@ div {
   inset: auto 15px 15px auto;
   background-image: linear-gradient(45deg, #f87171, #38bdf8);
   background-size: 300% 300%;
-  animation: gradient 5s ease infinite;
+  -webkit-animation: gradient 5s ease infinite;
+          animation: gradient 5s ease infinite;
   border-radius: 50%;
   box-shadow: 0 0 1px rgba(18, 19, 20, 0.5);
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+div svg {
+  width: 80%;
+  color: #f8fafc;
+}
 
-  svg {
-    width: 80%;
-    color: #f8fafc;
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
 
@@ -54,4 +66,4 @@ div {
   100% {
     background-position: 0% 50%;
   }
-}
+}/*# sourceMappingURL=style.css.map */
